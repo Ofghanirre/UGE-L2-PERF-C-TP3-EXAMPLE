@@ -5,10 +5,10 @@ set(CMAKE_C_STANDARD 23)
 
 # Inclure le dossier "inc" pour les fichiers d'en-tête
 include_directories(${CMAKE_SOURCE_DIR}/inc)
-include_directories(${CURSES_INCLUDE_DIR})
 
 # Trouver la bibliothèque ncurses
 find_package(Curses REQUIRED)
+include_directories(${CURSES_INCLUDE_DIR})
 
 # Définition de l'exécutable
 add_executable(TP3
